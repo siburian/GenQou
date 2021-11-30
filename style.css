@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --primary-color: #364ba7;
+  --secondary-color: #f583a7;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 10px;
+}
+
+.fa-quote-left {
+  font-size: 84px;
+  color: var(--secondary-color);
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+.author {
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+hr {
+  margin: 10px 0;
+  width: 60%;
+  border: 1px solid #364ba788;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.ig-share-button {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: var(--secondary-color);
+  border-radius: 4px;
+}
+.ig-share-button:hover {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 4px;
+  color: aliceblue;
+}
+
+.buttons button {
+  cursor: pointer;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 4px;
+  color: aliceblue;
+}
+
+button:focus {
+  outline: none;
+}
+
+.fa-twitter {
+  margin-right: 5px;
+}
+.text {
+  color: aliceblue;
+}
+.text:hover {
+  color: rgb(6, 139, 255);
+}
+/* loader */
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.hide {
+  display: none;
+}
